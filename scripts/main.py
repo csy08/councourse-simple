@@ -1,10 +1,7 @@
-import os, sys
-
-# sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-print(os.environ)
-
-print(sys.path)
-
+import os,sys
 from helpers.simple import hello_world
+
+print(os.environ)
+print(sys.path)
 
 hello_world()
