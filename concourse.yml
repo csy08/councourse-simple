@@ -20,5 +20,5 @@ jobs:
             source: { repository: python }
             tag: 3.6-alpine
           run:
-            path: python
-            args: [ "src/scripts/main.py" ]
+            path: sh
+            args: [ "PYTHONPATH=$PYTHONPATH:src/", "python", "src/scripts/main.py" ]
