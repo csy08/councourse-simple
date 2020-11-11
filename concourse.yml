@@ -21,4 +21,4 @@ jobs:
             tag: 3.6-alpine
           run:
             path: /bin/sh
-            args: [ '-c', 'PYTHONPATH=/tmp; python src/scripts/main.py']
+            args: [ '-c', 'export PYTHONPATH=${PWD}/src; python src/scripts/main.py']
